@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Berita dan pengumuman terkini dari SMA Dharma Wiyata." />
+  <title>Berita & Pengumuman – SMA Dharma Wiyata</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <div class="top-ribbon d-none d-md-block">
+    <div class="container d-flex justify-content-between align-items-center">
+      <span><i class="bi bi-telephone-fill me-1"></i>(0274) 345-6789 <span class="ribbon-sep">|</span> <i class="bi bi-envelope-fill me-1"></i>info@smadw.sch.id</span>
+      <span>PPDB 2025/2026 dibuka 1 Juli 2025 · <a href="ppdb.html">Daftar Sekarang</a></span>
+    </div>
+  </div>
+
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top scrolled">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-name">SMA Dharma Wiyata</span>
+        <span class="brand-sub">Bantul · Est. 1985</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Menu">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Akademik</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="akademik.html"><i class="bi bi-book me-2 text-primary"></i>Program Studi</a></li>
+              <li><a class="dropdown-item" href="ekskul.html"><i class="bi bi-stars me-2 text-primary"></i>Ekstrakurikuler</a></li>
+              <li><a class="dropdown-item" href="prestasi.html"><i class="bi bi-trophy me-2 text-primary"></i>Prestasi</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="guru.html">Guru & Staf</a></li>
+          <li class="nav-item"><a class="nav-link active" href="berita.html">Berita</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+        <a href="ppdb.html" class="btn btn-accent btn-sm ms-lg-3 mt-3 mt-lg-0">
+          <i class="bi bi-pencil-square me-1"></i>PPDB 2025
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1600&q=80" alt="" class="page-header-bg" />
+    <div class="page-header-overlay"></div>
+    <div class="container">
+      <div class="page-header-content">
+        <nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Beranda</a></li><li class="breadcrumb-item active">Berita & Pengumuman</li></ol></nav>
+        <h1>Berita & Pengumuman</h1>
+        <p>Kabar terkini, pengumuman resmi, dan informasi kegiatan sekolah.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- KONTEN BERITA + SIDEBAR -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-4">
+        <!-- MAIN CONTENT -->
+        <div class="col-lg-8">
+          <div class="row g-4" id="newsGrid">
+            <!-- Prestasi -->
+            <div class="col-12" data-category="prestasi" data-aos="fade-up">
+              <div class="news-card">
+                <div class="news-card-img">
+                  <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80" alt="OSN" />
+                  <span class="news-cat">Prestasi</span>
+                </div>
+                <div class="news-card-body">
+                  <div class="news-meta"><span><i class="bi bi-calendar3"></i>10 Juni 2025</span><span><i class="bi bi-eye"></i>1.240</span></div>
+                  <h5>Siswa Kami Raih Medali Emas OSN Biologi Tingkat Provinsi</h5>
+                  <p>Ahmad Fariz, siswa kelas XI MIPA 2, berhasil meraih medali emas pada Olimpiade Sains Nasional bidang Biologi tingkat provinsi DIY. Pencapaian ini menjadi kebanggaan seluruh warga sekolah.</p>
+                  <a href="berita-detail.html" class="news-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Pengumuman -->
+            <div class="col-12" data-category="pengumuman" data-aos="fade-up">
+              <div class="news-card">
+                <div class="news-card-img">
+                  <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=700&q=80" alt="PPDB" />
+                  <span class="news-cat">Pengumuman</span>
+                </div>
+                <div class="news-card-body">
+                  <div class="news-meta"><span><i class="bi bi-calendar3"></i>5 Juni 2025</span><span><i class="bi bi-eye"></i>3.580</span></div>
+                  <h5>PPDB Tahun Ajaran 2025/2026 Resmi Dibuka 1 Juli 2025</h5>
+                  <p>Penerimaan Peserta Didik Baru tahun ajaran 2025/2026 telah resmi dibuka. Pendaftaran dilakukan secara online melalui portal ppdb.smadw.sch.id mulai 1–14 Juli 2025.</p>
+                  <a href="ppdb.html" class="news-read-more">Lihat Info PPDB <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Kegiatan -->
+            <div class="col-12" data-category="kegiatan" data-aos="fade-up">
+              <div class="news-card">
+                <div class="news-card-img">
+                  <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=700&q=80" alt="Seminar" />
+                  <span class="news-cat">Kegiatan</span>
+                </div>
+                <div class="news-card-body">
+                  <div class="news-meta"><span><i class="bi bi-calendar3"></i>28 Mei 2025</span><span><i class="bi bi-eye"></i>892</span></div>
+                  <h5>Seminar Karier: Persiapkan Siswa Hadapi Dunia Kerja & PTN</h5>
+                  <p>Sekolah mengadakan seminar karier menghadirkan alumni sukses dari berbagai bidang untuk memotivasi siswa kelas XII dalam mempersiapkan masa depan.</p>
+                  <a href="berita-detail.html" class="news-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Prestasi -->
+            <div class="col-12" data-category="prestasi" data-aos="fade-up">
+              <div class="news-card">
+                <div class="news-card-img">
+                  <img src="https://images.unsplash.com/photo-1530099486328-e021101a494a?w=700&q=80" alt="Debat" />
+                  <span class="news-cat">Prestasi</span>
+                </div>
+                <div class="news-card-body">
+                  <div class="news-meta"><span><i class="bi bi-calendar3"></i>15 Mei 2025</span><span><i class="bi bi-eye"></i>672</span></div>
+                  <h5>Tim Debat SMA DW Juara 1 Tingkat Kabupaten Bantul</h5>
+                  <p>Tim debat bahasa Inggris SMA Dharma Wiyata berhasil meraih juara pertama dalam kompetisi debat tingkat kabupaten yang diselenggarakan oleh Dinas Pendidikan Bantul.</p>
+                  <a href="berita-detail.html" class="news-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Kegiatan -->
+            <div class="col-12" data-category="kegiatan" data-aos="fade-up">
+              <div class="news-card">
+                <div class="news-card-img">
+                  <img src="https://images.unsplash.com/photo-1500099817043-86d46000d58f?w=700&q=80" alt="Olahraga" />
+                  <span class="news-cat">Kegiatan</span>
+                </div>
+                <div class="news-card-body">
+                  <div class="news-meta"><span><i class="bi bi-calendar3"></i>1 Mei 2025</span><span><i class="bi bi-eye"></i>530</span></div>
+                  <h5>Gelar Olahraga Akhir Tahun: Memperkuat Semangat Kebersamaan</h5>
+                  <p>Pekan Olahraga Sekolah 2025 digelar selama tiga hari dengan berbagai cabang olahraga, diikuti seluruh siswa kelas X, XI, dan XII sebagai ajang mempererat persaudaraan.</p>
+                  <a href="berita-detail.html" class="news-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Pengumuman -->
+            <div class="col-12" data-category="pengumuman" data-aos="fade-up">
+              <div class="news-card">
+                <div class="news-card-img">
+                  <img src="https://images.unsplash.com/photo-1606326608690-4e0281b1e588?w=700&q=80" alt="Ujian" />
+                  <span class="news-cat">Pengumuman</span>
+                </div>
+                <div class="news-card-body">
+                  <div class="news-meta"><span><i class="bi bi-calendar3"></i>20 April 2025</span><span><i class="bi bi-eye"></i>2.100</span></div>
+                  <h5>Jadwal Ujian Akhir Semester Genap 2024/2025 Telah Ditetapkan</h5>
+                  <p>Ujian Akhir Semester Genap kelas X dan XI akan diselenggarakan pada 2–13 Juni 2025. Siswa diharapkan mempersiapkan diri dengan baik dan memperhatikan jadwal yang telah ditetapkan.</p>
+                  <a href="berita-detail.html" class="news-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- /#newsGrid -->
+        </div><!-- /col-lg-8 -->
+
+        <!-- SIDEBAR -->
+        <div class="col-lg-4">
+          <div class="sidebar">
+            <!-- Search -->
+            <div class="sidebar-widget">
+              <h6 class="sidebar-title">Cari Berita</h6>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Kata kunci..." id="newsSearch" />
+                <button class="btn btn-primary" type="button"><i class="bi bi-search"></i></button>
+              </div>
+            </div>
+            <!-- Kategori -->
+            <div class="sidebar-widget">
+              <h6 class="sidebar-title">Kategori</h6>
+              <ul class="sidebar-cat-list">
+                <li><a href="#" data-filter="all" class="active">Semua <span>6</span></a></li>
+                <li><a href="#" data-filter="prestasi">Prestasi <span>2</span></a></li>
+                <li><a href="#" data-filter="pengumuman">Pengumuman <span>2</span></a></li>
+                <li><a href="#" data-filter="kegiatan">Kegiatan <span>2</span></a></li>
+              </ul>
+            </div>
+            <!-- Berita Terkini -->
+            <div class="sidebar-widget">
+              <h6 class="sidebar-title">Berita Terkini</h6>
+              <ul class="sidebar-recent">
+                <li>
+                  <a href="berita-detail.html">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=80&q=70" alt="" />
+                    <div><span>Medali Emas OSN Biologi Tingkat Provinsi</span><time>10 Juni 2025</time></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="berita-detail.html">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=80&q=70" alt="" />
+                    <div><span>PPDB 2025/2026 Resmi Dibuka</span><time>5 Juni 2025</time></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="berita-detail.html">
+                    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=80&q=70" alt="" />
+                    <div><span>Seminar Karier untuk Kelas XII</span><time>28 Mei 2025</time></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- CTA PPDB -->
+            <div class="sidebar-widget sidebar-cta">
+              <div class="sidebar-cta-icon"><i class="bi bi-mortarboard"></i></div>
+              <h5>PPDB 2025/2026</h5>
+              <p>Bergabunglah bersama kami. Kuota terbatas — daftar sekarang!</p>
+              <a href="ppdb.html" class="btn btn-accent w-100">Daftar PPDB</a>
+            </div>
+          </div>
+        </div><!-- /sidebar -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="footer-brand-name">SMA Dharma Wiyata</div>
+          <div class="footer-brand-sub">Bantul · Est. 1985</div>
+          <p class="footer-desc">Sekolah unggulan berkarakter di Bantul, DIY.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="footer-title">Navigasi</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil Sekolah</a></li>
+            <li><a href="akademik.html">Akademik</a></li>
+            <li><a href="guru.html">Guru & Staf</a></li>
+            <li><a href="ppdb.html">PPDB</a></li>
+            <li><a href="berita.html">Berita</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="footer-title">Akademik</h6>
+          <ul class="footer-links">
+            <li><a href="akademik.html">Program MIPA</a></li>
+            <li><a href="akademik.html">Program IPS</a></li>
+            <li><a href="akademik.html">Program Bahasa</a></li>
+            <li><a href="ekskul.html">Ekstrakurikuler</a></li>
+            <li><a href="prestasi.html">Prestasi</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h6 class="footer-title">Hubungi Kami</h6>
+          <ul class="footer-contact">
+            <li><i class="bi bi-geo-alt-fill"></i>Jl. Pendidikan No. 45, Bantul, DIY 55711</li>
+            <li><i class="bi bi-telephone-fill"></i>(0274) 345-6789</li>
+            <li><i class="bi bi-whatsapp"></i>+62 812-3456-7890</li>
+            <li><i class="bi bi-envelope-fill"></i>info@smadw.sch.id</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <span>&copy; 2025 SMA Dharma Wiyata. Hak cipta dilindungi.</span>
+        <span>Dibuat dengan <i class="bi bi-heart-fill text-danger"></i> oleh <a href="https://indokoding.net">IndoKoding.net</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox"><button id="lightboxClose">&times;</button><img id="lightboxImg" src="" alt="" /></div>
+  <button id="backToTop" aria-label="Ke atas"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    const searchInput = document.getElementById('newsSearch');
+    if (searchInput) {
+      searchInput.addEventListener('input', () => {
+        const q = searchInput.value.toLowerCase();
+        document.querySelectorAll('#newsGrid [data-category]').forEach(item => {
+          item.style.display = item.textContent.toLowerCase().includes(q) ? '' : 'none';
+        });
+      });
+    }
+  </script>
+</body>
+</html>

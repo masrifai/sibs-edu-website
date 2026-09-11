@@ -1,0 +1,49 @@
+{
+  "name": "SekolahKu",
+  "slug": "sekolahku",
+  "version": "1.0.0",
+  "description": "Theme web profile SMA/MA prestisius dengan desain elegan. Deep Green + Gold palette, DM Serif Display + Inter typography.",
+  "author": "IndoKoding.net",
+  "category": "sekolah",
+  "tags": ["sekolah", "sma", "ma", "pendidikan", "ppdb", "prestisius", "elegan"],
+  "demo": "index.html",
+  "colors": {
+    "primary": "#166534",
+    "primary_dark": "#14532D",
+    "accent": "#CA8A04",
+    "secondary": "#0C1A0E"
+  },
+  "fonts": {
+    "heading": "DM Serif Display",
+    "body": "Inter"
+  },
+  "pages": [
+    { "file": "index.html",        "name": "Beranda",             "icon": "house" },
+    { "file": "profil.html",       "name": "Profil Sekolah",      "icon": "building" },
+    { "file": "akademik.html",     "name": "Akademik",            "icon": "book" },
+    { "file": "prestasi.html",     "name": "Prestasi",            "icon": "trophy" },
+    { "file": "ekskul.html",       "name": "Ekstrakurikuler",     "icon": "stars" },
+    { "file": "guru.html",         "name": "Guru & Staf",         "icon": "person-badge" },
+    { "file": "ppdb.html",         "name": "PPDB",                "icon": "pencil-square" },
+    { "file": "berita.html",       "name": "Berita & Pengumuman", "icon": "newspaper" },
+    { "file": "berita-detail.html","name": "Detail Berita",       "icon": "file-text" },
+    { "file": "galeri.html",       "name": "Galeri Foto",         "icon": "images" },
+    { "file": "kontak.html",       "name": "Kontak",              "icon": "envelope" }
+  ],
+  "dependencies": {
+    "bootstrap": "5.3.3",
+    "bootstrap-icons": "1.11.3",
+    "aos": "2.3.4"
+  },
+  "screenshot": "assets/screenshots/home.png",
+  "school": {
+    "name": "SMA Dharma Wiyata",
+    "tagline": "Membentuk Insan Berilmu, Berakhlak, Berprestasi",
+    "founded": "1985",
+    "accreditation": "A (Unggul)",
+    "npsn": "20403456",
+    "address": "Jl. Pendidikan No. 45, Kab. Bantul, DIY 55711",
+    "phone": "(0274) 345-6789",
+    "email": "info@smadw.sch.id"
+  }
+}
