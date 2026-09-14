@@ -8,40 +8,42 @@
 
 /* ── 00. Bootstrap Override ─────────────── */
 :root {
-  /* replace Bootstrap's blue primary with our deep green */
-  --bs-primary:           #166534;
-  --bs-primary-rgb:       22, 101, 52;
-  --bs-link-color:        #166534;
-  --bs-link-hover-color:  #14532D;
-  --bs-dropdown-link-active-bg: #F0FDF4;
-  --bs-dropdown-link-active-color: #166534;
-  --bs-accordion-btn-active-color: #166534;
-  --bs-accordion-active-bg:        #F0FDF4;
-  --bs-accordion-btn-focus-box-shadow: 0 0 0 .25rem rgba(22,101,52,.25);
-  --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23166534' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
-  --bs-focus-ring-color:  rgba(22,101,52,.25);
-  --bs-nav-link-hover-color: #14532D;
+  /* SIBS EDU — Navy + Gold */
+  --bs-primary:           #0B1F3A;
+  --bs-primary-rgb:       11, 31, 58;
+  --bs-link-color:        #0B1F3A;
+  --bs-link-hover-color:  #07152A;
+  --bs-dropdown-link-active-bg: #EAF0F7;
+  --bs-dropdown-link-active-color: #0B1F3A;
+  --bs-accordion-btn-active-color: #0B1F3A;
+  --bs-accordion-active-bg:        #EAF0F7;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 .25rem rgba(11,31,58,.25);
+  --bs-focus-ring-color:  rgba(11,31,58,.25);
+  --bs-nav-link-hover-color: #07152A;
 }
 
 /* ── 01. Variables ──────────────────────── */
 :root {
-  --primary:       #166534;
-  --primary-dark:  #14532D;
-  --primary-mid:   #15803D;
-  --primary-light: #F0FDF4;
-  --accent:        #CA8A04;
-  --accent-dark:   #A16207;
-  --accent-light:  #FFFBEB;
-  --secondary:     #0C1A0E;
+  --primary:       #0B1F3A;
+  --primary-dark:  #07152A;
+  --primary-mid:   #163A63;
+  --primary-light: #EAF0F7;
+
+  --accent:        #C9A227;
+  --accent-dark:   #A68116;
+  --accent-light:  #F7F0D5;
+
+  --secondary:     #08182D;
   --white:         #FFFFFF;
-  --off-white:     #FAFAF8;
-  --gray-100:      #F4F4F0;
-  --gray-200:      #E8E8E2;
-  --gray-300:      #D1D1C7;
-  --gray-400:      #9B9B8E;
-  --gray-500:      #737367;
-  --gray-600:      #545449;
-  --gray-700:      #363630;
+  --off-white:     #F7F8FA;
+
+  --gray-100:      #F1F3F5;
+  --gray-200:      #E2E6EA;
+  --gray-300:      #CED4DA;
+  --gray-400:      #ADB5BD;
+  --gray-500:      #6C757D;
+  --gray-600:      #495057;
+  --gray-700:      #343A40;
 
   --font-serif: 'DM Serif Display', Georgia, serif;
   --font-sans:  'Inter', system-ui, sans-serif;
@@ -233,8 +235,15 @@ h1, h2, h3, h4, h5, h6 {
   opacity: .28;
 }
 .hero-overlay {
-  position: absolute; inset: 0; z-index: 0;
-  background: linear-gradient(135deg, rgba(12,26,14,.94) 0%, rgba(22,101,52,.78) 55%, rgba(21,128,61,.55) 100%);
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(7,21,42,.94) 0%,
+    rgba(11,31,58,.78) 55%,
+    rgba(22,58,99,.55) 100%
+  );
 }
 /* ensure container content is always above overlay */
 .hero > .container { position: relative; z-index: 2; }
@@ -251,7 +260,10 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--white); line-height: 1.1;
   margin-bottom: 1.5rem; font-weight: 400;
 }
-.hero-title em { font-style: italic; color: #86EFAC; }
+.hero-title em {
+  font-style: italic;
+  color: var(--accent);
+}
 .hero-desc {
   font-size: .92rem; color: rgba(255,255,255,.68);
   max-width: 460px; line-height: 1.82; margin-bottom: 2rem;
@@ -451,10 +463,14 @@ h1, h2, h3, h4, h5, h6 {
 .gallery-item img { width: 100%; display: block; transition: transform .4s; }
 .gallery-item:hover img { transform: scale(1.04); }
 .gallery-overlay {
-  position: absolute; inset: 0;
-  background: rgba(12,26,14,.55);
-  display: flex; align-items: center; justify-content: center;
-  opacity: 0; transition: opacity .3s;
+  position: absolute;
+  inset: 0;
+  background: rgba(7,21,42,.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity .3s;
 }
 .gallery-item:hover .gallery-overlay { opacity: 1; }
 .gallery-overlay i { color: var(--white); font-size: 1.5rem; }
