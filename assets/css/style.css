@@ -363,6 +363,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-desc {
   font-size: .92rem; color: rgba(255,255,255,.68);
   max-width: 460px; line-height: 1.82; margin-bottom: 2rem;
+  text-align: justify;
 }
 .hero-actions { display: flex; gap: .85rem; flex-wrap: wrap; }
 .hero-info-strip {
@@ -429,6 +430,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.05rem; font-style: italic;
   color: var(--gray-500); border-left: 3px solid var(--accent);
   padding-left: 1.25rem; margin: 1.75rem 0; line-height: 1.75;
+  text-align: justify;
 }
 
 /* ── 11. Program Cards ──────────────────── */
@@ -1256,7 +1258,7 @@ h1, h2, h3, h4, h5, h6 {
         rgba(11,31,58,.92) 55%,
         rgba(22,58,99,.88) 100%
       ),
-      url('../images/7.jpg') center center / cover no-repeat;
+      url('../images/2.jpeg') center center / cover no-repeat;
   }
 
   .hero-overlay {
