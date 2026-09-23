@@ -297,6 +297,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: .50;
 }
 
+
 /* NAVY OVERLAY */
 .hero-overlay {
   position: absolute;
@@ -311,7 +312,15 @@ h1, h2, h3, h4, h5, h6 {
     rgba(22,58,99,.55) 100%
   );
 }
-
+.hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
 
 /* Isi hero tetap di atas video */
 .hero .container {
@@ -1258,11 +1267,6 @@ h1, h2, h3, h4, h5, h6 {
         rgba(11,31,58,.92) 55%,
         rgba(22,58,99,.88) 100%
       ),
-      url('../images/2.jpeg') center center / cover no-repeat;
-  }
-
-  .hero-overlay {
-    background: transparent;
   }
 
 }
