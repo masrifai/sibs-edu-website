@@ -220,6 +220,24 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-toggler { border: none !important; box-shadow: none !important; padding: .25rem; }
 .navbar-toggler i { font-size: 1.6rem; color: var(--white); transition: color .3s; }
 #mainNav.scrolled .navbar-toggler i { color: var(--gray-700); }
+@media (max-width: 991.98px) {
+    #mainNav .navbar-toggler {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1051;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #mainNav .navbar-toggler i {
+        display: block;
+        color: var(--white) !important;
+        opacity: 1;
+        visibility: visible;
+    }
+}
 
 /* Logo Navbar */
 .navbar-brand {
