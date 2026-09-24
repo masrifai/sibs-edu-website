@@ -1152,132 +1152,88 @@ h1, h2, h3, h4, h5, h6 {
   .gallery-grid { columns: 1; }
 }
 /* ── MOBILE NAVBAR 23/september/2026─────────────────────── */
+/* ===== MOBILE NAVBAR FINAL ===== */
 @media (max-width: 991.98px) {
 
-  #mainNav {
-    padding: .65rem 0;
-    background: rgba(8, 24, 45, .97);
-  }
+    #mainNav {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999 !important;
+        background: #ffffff !important;
+    }
 
-  #mainNav .container {
-    position: relative;
-  }
+    #mainNav .container {
+        position: relative !important;
+    }
 
-  .navbar-brand {
-    max-width: calc(100% - 60px);
-  }
+    /* HAMBURGER */
+    #mainNav .navbar-toggler {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
 
-  .brand-name {
-    font-size: 1rem;
-    line-height: 1.2;
-  }
+        position: absolute !important;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%) !important;
 
-  .brand-sub {
-    font-size: .56rem;
-    margin-top: .15rem;
-  }
+        width: 42px;
+        height: 42px;
+        padding: 0 !important;
 
-  .navbar-toggler {
-    padding: .35rem;
-    border-radius: 6px;
-  }
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
 
-  .navbar-toggler:focus {
-    outline: none;
-    box-shadow: none !important;
-  }
+        opacity: 1 !important;
+        visibility: visible !important;
 
-  .navbar-toggler i {
-    font-size: 1.55rem;
-    color: var(--white);
-  }
+        z-index: 10000 !important;
+    }
 
-  /* Panel menu mobile */
-  .navbar-collapse {
-    margin-top: .7rem;
-    padding: .55rem .75rem .9rem;
-    background: var(--secondary);
-    border-top: 1px solid rgba(255,255,255,.08);
-    border-radius: 0 0 12px 12px;
-  }
+    #mainNav .navbar-toggler i {
+        display: block !important;
 
-  .navbar-nav {
-    width: 100%;
-    gap: 0 !important;
-    align-items: stretch !important;
-  }
+        font-size: 1.6rem !important;
+        line-height: 1 !important;
 
-  .navbar-nav .nav-item {
-    width: 100%;
-  }
+        color: #1b2f4a !important;
 
-  .navbar-nav .nav-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: .7rem .5rem;
-    color: rgba(255,255,255,.82);
-    font-size: .82rem;
-    border-bottom: 1px solid rgba(255,255,255,.07);
-  }
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
 
-  .navbar-nav .nav-item:last-child .nav-link {
-    border-bottom: none;
-  }
+    /* PANEL MENU */
+    #mainNav .navbar-collapse {
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
 
-  .navbar-nav .nav-link::after {
-    display: none;
-  }
+        z-index: 9998 !important;
 
-  .navbar-nav .nav-link:hover,
-  .navbar-nav .nav-link.active {
-    color: var(--white);
-  }
+        margin-top: 0 !important;
+        padding: .55rem .75rem .9rem !important;
 
-  .navbar-nav .nav-link.active {
-    color: var(--accent);
-  }
+        background: #08182d !important;
 
-  /* Dropdown mobile */
-  .navbar-nav .dropdown-menu {
-    position: static;
-    width: 100%;
-    min-width: 0;
-    margin: 0;
-    padding: .25rem 0 .5rem .75rem;
-    background: rgba(255,255,255,.035);
-    border: none;
-    border-radius: 6px;
-    box-shadow: none;
-  }
+        border-top: 1px solid rgba(255,255,255,.14) !important;
+        border-radius: 0 0 12px 12px;
+    }
 
-  .navbar-nav .dropdown-item {
-    color: rgba(255,255,255,.7);
-    padding: .55rem .65rem;
-    font-size: .78rem;
-  }
+    #mainNav .navbar-nav {
+        width: 100%;
+    }
 
-  .navbar-nav .dropdown-item:hover,
-  .navbar-nav .dropdown-item:active {
-    background: rgba(255,255,255,.06);
-    color: var(--accent);
-  }
+    #mainNav .navbar-nav .nav-link {
+        border-bottom: 1px solid rgba(255,255,255,.14);
+    }
 
-  /* Tombol PPDB */
-  #mainNav .btn-accent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: .8rem 0 0 !important;
-    padding: .7rem 1rem;
-  }
-
-  /* Hilangkan animasi collapse yang terasa berat */
-  #navMenu.collapsing {
-    transition: height .15s ease;
-  }
+    #mainNav .navbar-nav .nav-item:last-child .nav-link {
+        border-bottom: none;
+    }
 }
 /* ── MOBILE HERO PERFORMANCE ───────────── */
 /* @media (max-width: 767.98px) {
