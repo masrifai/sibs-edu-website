@@ -1,569 +1,199 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Situwangi Islamic Boarding School – The Real School for Indonesian Leader" />
-  <title>Beranda – Situwangi Islamic Boarding School</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Situwangi Islamic Boarding School</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            min-height: 100%;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+
+            font-family: Arial, sans-serif;
+            color: #fff;
+
+            /* GANTI FOTO DI SINI NANTI */
+            background:
+                linear-gradient(
+                    rgba(8, 24, 45, .78),
+                    rgba(8, 24, 45, .88)
+                ),
+                url("assets/images/2.jpeg")
+                center center / cover no-repeat;
+        }
+
+        /* efek halus background */
+        body::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(8, 24, 45, .15);
+            z-index: 0;
+        }
+
+        .maintenance {
+            position: relative;
+            z-index: 1;
+
+            width: min(90%, 680px);
+            padding: 48px 32px;
+
+            text-align: center;
+
+            background: rgba(8, 24, 45, .48);
+            border: 1px solid rgba(255,255,255,.16);
+            border-radius: 20px;
+
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+
+            box-shadow: 0 20px 60px rgba(0,0,0,.25);
+        }
+
+        .logo {
+            width: 82px;
+            height: 82px;
+            object-fit: contain;
+            margin-bottom: 26px;
+        }
+
+        .eyebrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            margin-bottom: 18px;
+
+            color: #d4a72c;
+            font-size: .68rem;
+            font-weight: 700;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+        }
+
+        .eyebrow::before,
+        .eyebrow::after {
+            content: "";
+            width: 28px;
+            height: 1px;
+            background: #d4a72c;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(2.2rem, 7vw, 4rem);
+            font-weight: 400;
+            line-height: 1.08;
+            margin-bottom: 20px;
+        }
+
+        h1 em {
+            color: #d4a72c;
+            font-style: italic;
+        }
+
+        p {
+            max-width: 520px;
+            margin: 0 auto 28px;
+
+            color: rgba(255,255,255,.75);
+            font-size: .95rem;
+            line-height: 1.8;
+        }
+
+        .status {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+
+            padding: 10px 18px;
+
+            border: 1px solid rgba(212,167,44,.5);
+            border-radius: 999px;
+
+            color: #d4a72c;
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+        }
+
+        .status-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #d4a72c;
+        }
+
+        @media (max-width: 575px) {
+            .maintenance {
+                padding: 38px 22px;
+                border-radius: 16px;
+            }
+
+            .logo {
+                width: 70px;
+                height: 70px;
+            }
+
+            p {
+                font-size: .88rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-  <!-- ── TOP RIBBON ────────────────────── -->
-  <!-- <div class="top-ribbon d-none d-md-block">
-    <div class="container d-flex justify-content-between align-items-center">
-      <span><i class="bi bi-telephone-fill me-1"></i>(0274) 345-6789 <span class="ribbon-sep">|</span> <i class="bi bi-envelope-fill me-1"></i>info@situwangi.sch.id</span>
-      <span>PPDB 2025/2026 dibuka 1 November 2026 · <a href="ppdb.html">Daftar Sekarang</a></span>
-    </div>
-  </div> -->
+    <main class="maintenance">
 
-  <!-- ── NAVBAR ────────────────────────── -->
-  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-    <img src="assets/images/logo/sibs.png"
-         alt="SMA IT Situwangi"
-         class="navbar-logo">
+        <!-- LOGO -->
+        <img
+            src="assets/images/logo/sibs.png"
+            alt="Situwangi Islamic Boarding School"
+            class="logo"
+        >
 
-    <span class="brand-name">
-        Situwangi Islamic Boarding School
-    </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Menu">
-        <i class="bi bi-list"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Profil</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Akademik</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"><i class="bi bi-book me-2 text-primary"></i>Program Studi</a></li>
-              <li><a class="dropdown-item" href="#"><i class="bi bi-stars me-2 text-primary"></i>Ekstrakurikuler</a></li>
-              <li><a class="dropdown-item" href="#"><i class="bi bi-trophy me-2 text-primary"></i>Prestasi</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#">Guru & Staf</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Berita</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Galeri</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
-        </ul>
-        <a href="#" class="btn btn-accent btn-sm ms-lg-3 mt-3 mt-lg-0">
-          <i class="bi bi-pencil-square me-1"></i>PPDB 2026
-        </a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- ── HERO ──────────────────────────── -->
-  <!-- <section class="hero">
-    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80" alt="Situwangi Islamic Boarding School" class="hero-bg" />
-    <div class="hero-overlay"></div>
-    <div class="container"> -->
-  <section class="hero">
-
-    <!-- VIDEO BACKGROUND -->
-    <!-- <video class="hero-video" autoplay muted loop playsinline>
-        <source src="assets/videos/1.mp4" type="video/mp4">
-    </video> -->
-    <img
-    src="assets/images/2.jpeg"
-    alt="Situwangi Islamic Boarding School"
-    class="hero-image">
-    <!-- NAVY OVERLAY -->
-    <div class="hero-overlay"></div>
-
-    <div class="container">
-      <div class="hero-content">
-        <div class="row">
-          <div class="col-lg-7">
-            <div class="hero-eyebrow"><span></span> Situwangi Islamic Boarding School · Akreditasi A</div>
-            <h1 class="hero-title">
-              Ikhtiar<br>
-              <em>Membangun</em><br>
-              Generasi.
-            </h1>
-            <p class="hero-desc">Situwangi Islamic Boarding School (SIBS) adalah lembaga pendidikan Islam berasrama yang memadukan pendidikan keislaman, pembinaan karakter, dan pendidikan formal secara terpadu melalui program Tahfidz Al-Qur’an, Bahasa Arab, Bahasa Inggris, serta pendidikan formal SMP IT dan SMA IT. Dengan lingkungan pendidikan yang mendukung pembiasaan ibadah, akhlak, kemandirian, dan kepemimpinan, SIBS berkomitmen mencetak generasi berkarakter ulama, berjiwa pemimpin, mandiri, dan berwawasan global.</p>
-              <div class="hero-actions">
-              <a href="#" class="btn btn-outline-light">Tentang Sekolah</a>
-              <a href="#" class="btn btn-accent">Daftar PPDB <i class="bi bi-arrow-right ms-1"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="hero-info-strip">
-          <div class="hero-info-item"><strong>2010</strong>Tahun Berdiri</div>
-          <div class="hero-info-item"><strong>500+</strong>Siswa Aktif</div>
-          <div class="hero-info-item"><strong>40</strong>Guru & Staf</div>
-          <div class="hero-info-item"><strong>98%</strong>Kelulusan</div>
-        </div>
-      </div>
-    </div>
-    <div class="hero-scroll"><i class="bi bi-chevron-down"></i> Scroll</div>
-  </section>
-
-  <!-- ── STATS BAR ─────────────────────── -->
-  <section class="section-padding-sm bg-off-white">
-    <div class="container">
-      <div class="stats-bar">
-        <div class="row align-items-center g-0">
-          <div class="col-6 col-md-3">
-            <div class="stat-item" data-aos="fade-up">
-              <div class="stat-number"><span data-count="16">0</span><sup>+</sup></div>
-              <div class="stat-label">Tahun Berdiri</div>
-            </div>
-          </div>
-          <div class="col-1 d-none d-md-flex"><div class="stat-divider mx-auto"></div></div>
-          <div class="col-6 col-md-2">
-            <div class="stat-item" data-aos="fade-up" data-aos-delay="80">
-              <div class="stat-number"><span data-count="500">0</span>+</div>
-              <div class="stat-label">Siswa Aktif</div>
-            </div>
-          </div>
-          <div class="col-1 d-none d-md-flex"><div class="stat-divider mx-auto"></div></div>
-          <div class="col-6 col-md-2">
-            <div class="stat-item" data-aos="fade-up" data-aos-delay="40">
-              <div class="stat-number"><span data-count="40">0</span></div>
-              <div class="stat-label">Guru & Staf</div>
-            </div>
-          </div>
-          <div class="col-1 d-none d-md-flex"><div class="stat-divider mx-auto"></div></div>
-          <div class="col-6 col-md-2">
-            <div class="stat-item" data-aos="fade-up" data-aos-delay="240">
-              <div class="stat-number"><span data-count="98">0</span>%</div>
-              <div class="stat-label">Kelulusan</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── TENTANG SINGKAT ────────────────── -->
-  <section class="section-padding">
-    <div class="container">
-      <div class="row g-5 align-items-center">
-        <div class="col-lg-5" data-aos="fade-right">
-          <div class="about-img-wrap">
-            <img src="assets/images/5.jpeg" alt="Suasana Belajar" class="about-img-main" />
-            <div class="about-img-badge">
-              <div class="badge-icon"><i class="bi bi-patch-check-fill"></i></div>
-              <div>
-                <div class="badge-text">Akreditasi A</div>
-                <div class="badge-sub">Unggul</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-7" data-aos="fade-left" data-aos-delay="100">
-          <div class="section-label">Tentang Kami</div>
-          <h2 class="section-title">SITUWANGI ISLAMIC BOARDING SCHOOL</h2>
-          <blockquote class="about-quote">
-            "Sistem Pendidikan Syamil Mutakamil merupakan sistem pendidikan yang komprehensif dan terpadu, mencakup aspek intelektual, emosional, dan spiritual. Melalui pendekatan ini, SIBS mengintegrasikan program Tahfizh Al-Qur'an 30 Juz selama enam tahun serta penguasaan Bahasa Arab dan Bahasa Inggris."
-          </blockquote>
-          <p class="mb-3" style="font-size:.9rem;line-height:1.8;text-align: justify;">Situwangi Islamic Boarding School berdiri sejak 2010 di Kabupaten Garut, Jawa Barat. Selama lebih dari dua dekade, berkomitmen mencetak generasi berkarakter sebagai PEMIMPIN yang bertanggung jawab, ULAMA yang berilmu dan berakhlak, serta pribadi MANDIRI yang siap menghadapi kehidupan dan memberikan manfaat bagi umat.</p>
-          <p class="mb-4" style="font-size:.9rem;line-height:1.8" >Dengan fasilitas lengkap, tenaga pendidik berpengalaman, dan kurikulum yang terus diperbarui, kami siap menjadi jembatan bagi siswa menuju perguruan tinggi dan karier impian.</p>
-          <div class="row g-3 mb-4">
-            <div class="col-sm-6">
-              <div class="feature-item">
-                <div class="feature-icon"><i class="bi bi-building"></i></div>
-                <div class="feature-text">
-                  <h6>Fasilitas Lengkap</h6>
-                  <p>Lab sains, lab komputer, perpustakaan digital, lapangan olahraga</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="feature-item">
-                <div class="feature-icon"><i class="bi bi-mortarboard"></i></div>
-                <div class="feature-text">
-                  <h6>Guru Berpengalaman</h6>
-                  <p>98% pendidik bergelar S1/S2 dengan sertifikasi nasional</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="feature-item">
-                <div class="feature-icon"><i class="bi bi-trophy"></i></div>
-                <div class="feature-text">
-                  <h6>Prestasi Gemilang</h6>
-                  <p>Ratusan prestasi olimpiade sains & lomba tingkat nasional</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="feature-item">
-                <div class="feature-icon"><i class="bi bi-heart"></i></div>
-                <div class="feature-text">
-                  <h6>Karakter Unggul</h6>
-                  <p>Pemimpin, Ulama, dan Mandiri</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a href="#" class="btn btn-primary">Selengkapnya tentang Kami <i class="bi bi-arrow-right ms-1"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-<!-- ── PROGRAM UNGGULAN ──────────────────── -->
-<section class="section-padding bg-off-white">
-  <div class="container">
-    <div class="row justify-content-center mb-5">
-      <div class="col-lg-7 text-center" data-aos="fade-up">
-        <div class="section-label justify-content-center">Program Unggulan</div>
-        <h2 class="section-title">Empat Program Unggulan</h2>
-        <p class="section-lead mx-auto">
-          Pendidikan terpadu yang mengembangkan hafalan Al-Qur’an, kemampuan bahasa,
-          serta prestasi akademik untuk membentuk generasi yang berkarakter ulama, pemimpin dan mandiri.
-        </p>
-      </div>
-    </div>
-
-    <div class="row g-4">
-
-      <!-- Tahfizh -->
-      <div class="col-lg-3" data-aos="fade-up" data-aos-delay="0">
-        <div class="program-card">
-          <div class="program-icon">
-            <i class="bi bi-book"></i>
-          </div>
-          <h5>Tahfizh 30 Juz</h5>
-          <p class="mb-3">
-            Program Tahfizh Al-Qur’an 30 Juz yang menjadi bagian utama pendidikan
-            selama enam tahun dengan pembinaan hafalan dan pemahaman keislaman.
-          </p>
-          <ul style="font-size:.82rem;color:var(--gray-500);padding-left:1.1rem">
-            <li>Tahfizh Al-Qur’an 30 Juz</li>
-            <li>Pembinaan Hafalan</li>
-            <li>Pendidikan Keislaman</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Bahasa -->
-      <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
-        <div class="program-card">
-          <div class="program-icon">
-            <i class="bi bi-translate"></i>
-          </div>
-          <h5>Bahasa Arab & Inggris</h5>
-          <p class="mb-3">
-            Pembelajaran bahasa secara terpadu untuk mendukung kemampuan komunikasi
-            dan membuka wawasan siswa terhadap literatur dan lingkungan global.
-          </p>
-          <ul style="font-size:.82rem;color:var(--gray-500);padding-left:1.1rem">
-            <li>Bahasa Arab</li>
-            <li>Bahasa Inggris</li>
-            <li>Komunikasi & Public Speaking</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Pendidikan Formal -->
-      <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
-        <div class="program-card">
-          <div class="program-icon">
-            <i class="bi bi-mortarboard"></i>
-          </div>
-          <h5>Pendidikan Formal IPA</h5>
-          <p class="mb-3">
-            Pendidikan formal dengan penguatan bidang sains untuk membekali siswa
-            dalam melanjutkan pendidikan ke perguruan tinggi dan mengembangkan
-            prestasi akademik.
-          </p>
-          <ul style="font-size:.82rem;color:var(--gray-500);padding-left:1.1rem">
-            <li>Matematika</li>
-            <li>Fisika, Kimia & Biologi</li>
-            <li>Persiapan OSN & Perguruan Tinggi</li>
-          </ul>
-        </div>
-      </div>
-
-    <!-- TARBIYAH -->
-    <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
-      <div class="program-card">
-        <div class="program-icon">
-          <i class="bi bi-heart-fill"></i>
+        <div class="eyebrow">
+            Situwangi Islamic Boarding School
         </div>
 
-        <h5>TARBIYAH</h5>
+        <h1>
+            Website sedang<br>
+            <em>dalam pemeliharaan.</em>
+        </h1>
 
-        <p class="mb-3">
-          Program pembinaan santri secara intensif yang mencakup pengembangan
-          ruhiyah, jasadiyah, dan fikriyah secara terpadu. Pembinaan dilakukan
-          melalui halaqah tarbiyah bersama murabbi dengan komposisi ideal
-          1 murabbi : 12 santri untuk membentuk santri yang berakhlak,
-          mandiri, dan berkarakter pemimpin.
+        <p>
+            Kami sedang melakukan pembaruan dan penyempurnaan
+            website untuk memberikan pengalaman yang lebih baik.
+            Mohon kembali beberapa saat lagi.
         </p>
 
-        <ul style="font-size:.82rem;color:var(--gray-500);padding-left:1.1rem">
-          <li>Berakhlak</li>
-          <li>Mandiri</li>
-          <li>Berkarakter pemimpin</li>
-        </ul>
-      </div>
-    </div>
-      
-
-    </div>
-
-    <div class="text-center mt-4" data-aos="fade-up">
-      <a href="akademik.html" class="btn btn-outline-primary">
-        Lihat Selengkapnya
-        <i class="bi bi-arrow-right ms-1"></i>
-      </a>
-    </div>
-  </div>
-</section>
-
- <!-- ── BERITA TERBARU ─────────────────── -->
-<section class="section-padding">
-  <div class="container">
-    <div class="row justify-content-between align-items-end mb-5">
-      <div class="col-lg-6" data-aos="fade-up">
-        <div class="section-label">Berita & Pengumuman</div>
-        <h2 class="section-title mb-0">Kabar Terkini dari Sekolah</h2>
-      </div>
-      <div class="col-auto d-none d-lg-block" data-aos="fade-up">
-        <a href="#" class="btn btn-outline-primary btn-sm">
-          Semua Berita <i class="bi bi-arrow-right ms-1"></i>
-        </a>
-      </div>
-    </div>
-
-    <div class="row g-4">
-
-      <!-- APRESIASI TAHFIZH -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
-        <div class="news-card">
-          <div class="news-card-img">
-            <img src="assets/images/8.jpeg"
-                 alt="Apresiasi Tahfizh Al-Qur'an" />
-            <span class="news-cat">Apresiasi</span>
-          </div>
-
-          <div class="news-card-body">
-            <div class="news-meta">
-              <span>
-                <i class="bi bi-calendar3"></i> 2026
-              </span>
-              <span>
-                <i class="bi bi-award"></i> Tahfizh
-              </span>
-            </div>
-
-            <h5>Apresiasi Hadiah Umrah bagi Ananda yang Menyelesaikan 30 Juz</h5>
-
-            <p>
-              Sebagai bentuk apresiasi atas pencapaian dalam menyelesaikan
-              hafalan Al-Qur'an 30 Juz, ananda <strong>Ananda Muhammad Adrian Ramdan Alamsyah</strong>
-              memperoleh hadiah umrah dari <strong>FANDIEGO Tour & Trave yang diwakili H. Achmad Irfan</strong>.
-            </p>
-
-            <a href="#" class="news-read-more">
-              Baca Selengkapnya <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
+        <div class="status">
+            <span class="status-dot"></span>
+            Under Maintenance
         </div>
-      </div>
 
-      <!-- PENGUMUMAN -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="news-card">
-          <div class="news-card-img">
-            <img src="assets/images/9.jpeg"
-                 alt="Pengumuman Sekolah" />
-            <span class="news-cat">PPDB 2026</span>
-          </div>
+    </main>
 
-          <div class="news-card-body">
-            <div class="news-meta">
-              <span>
-                <i class="bi bi-calendar3"></i> Dibuka mulai1 November 2026
-              </span>
-              <span>
-                <i class="bi bi-megaphone"></i> Informasi
-              </span>
-            </div>
-
-            <h5>Pengumuman PPDB 1 November 2026</h5>
-
-            <p>
-              Informasi dan pengumuman terbaru terkait PPDB
-              pendidikan SIBS pada 1 November 2026.
-            </p>
-
-            <a href="#" class="news-read-more">
-              Baca Selengkapnya <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- PELANTIKAN OSIS -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="news-card">
-          <div class="news-card-img">
-            <img src="assets/images/6.jpg"
-                 alt="Pelantikan SSO 2026" />
-            <span class="news-cat">Kegiatan</span>
-          </div>
-
-          <div class="news-card-body">
-            <div class="news-meta">
-              <span>
-                <i class="bi bi-calendar3"></i> 2026
-              </span>
-              <span>
-                <i class="bi bi-people"></i> OSIS
-              </span>
-            </div>
-
-            <h5>Pelantikan SSO, UBS & Brigade Situwangi Tahun 2026</h5>
-
-            <p>
-              Pelantikan pengurus SSO, UBS & Brigade Situwangi  tahun 2026 sebagai bagian dari
-              pembinaan kepemimpinan, tanggung jawab, dan pengalaman
-              berorganisasi bagi para siswa.
-            </p>
-
-            <a href="#" class="news-read-more">
-              Baca Selengkapnya <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-  <!-- ── GALERI PREVIEW ─────────────────── -->
-  <!-- <section class="section-padding bg-off-white">
-    <div class="container">
-      <div class="row justify-content-between align-items-end mb-4">
-        <div class="col-lg-6" data-aos="fade-up">
-          <div class="section-label">Galeri Foto</div>
-          <h2 class="section-title mb-0">Momen Berharga di Situwangi Islamic Boarding School</h2>
-        </div>
-        <div class="col-auto d-none d-lg-block" data-aos="fade-up">
-          <a href="#" class="btn btn-outline-primary btn-sm">Lihat Semua Foto <i class="bi bi-arrow-right ms-1"></i></a>
-        </div>
-      </div>
-      <div class="gallery-grid" data-aos="fade-up">
-        <div class="gallery-item" data-lightbox="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1200&q=80">
-          <img src="assets/images/1.jpeg" alt="Kegiatan Kelas" />
-          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
-        </div>
-        <div class="gallery-item" data-lightbox="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=1200&q=80">
-          <img src="assets/images/2.jpeg" alt="Olahraga" />
-          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
-        </div>
-        <div class="gallery-item" data-lightbox="https://images.unsplash.com/photo-1533561052604-c3beb6d55b8d?w=1200&q=80">
-          <img src="assets/images/3.jpeg" alt="Perpustakaan" />
-          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
-        </div>
-        <div class="gallery-item" data-lightbox="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&q=80">
-          <img src="assets/images/4.jpeg" alt="Lab Sains" />
-          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
-        </div>
-        <div class="gallery-item" data-lightbox="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80">
-          <img src="assets/images/5.jpeg" alt="Diskusi Siswa" />
-          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
-        </div>
-        <div class="gallery-item" data-lightbox="https://images.unsplash.com/photo-1549057446-9f5c6ac91a04?w=1200&q=80">
-          <img src="assets/images/6.jpg" alt="Upacara" />
-          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- ── CTA PPDB ───────────────────────── -->
-  <section class="cta-section">
-    <div class="container position-relative" style="z-index:2">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-8" data-aos="fade-right">
-          <div class="section-label" style="color:var(--accent)">PPDB 2026/2027</div>
-          <h2>Bergabunglah Bersama Keluarga Besar Situwangi Islamic Boarding School</h2>
-          <p class="mt-2">Pendaftaran dibuka mulai 1 November 2026. Kuota terbatas — segera daftar dan raih kesempatan belajar di sekolah terbaik Garut.</p>
-        </div>
-        <div class="col-lg-4 text-lg-end" data-aos="fade-left" data-aos-delay="100">
-          <a href="#" class="btn btn-accent me-2 mb-2">Daftar Sekarang <i class="bi bi-arrow-right ms-1"></i></a>
-          <a href="#" class="btn btn-outline-light mb-2">Hubungi Kami</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── FOOTER ─────────────────────────── -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row g-5">
-        <div class="col-lg-4">
-          <div class="footer-brand-name">Situwangi Islamic Boarding School</div>
-          <div class="footer-brand-sub">Garut · Est. 2010</div>
-          <p class="footer-desc">Sekolah unggulan berkarakter di Garut. Mencetak pemimpin, Ulama, dan Mandiri sejak 2010.</p>
-          <div class="footer-social">
-            <a href="https://www.facebook.com/situwangi.cikajang.3?locale=id_ID" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/situwangi_official" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.youtube.com/@situwangi.foundation" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-            <!-- <a href="#" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a> -->
-          </div>
-        </div>
-        <div class="col-6 col-lg-2">
-          <h6 class="footer-title">Navigasi</h6>
-          <ul class="footer-links">
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Profil Sekolah</a></li>
-            <li><a href="#">Akademik</a></li>
-            <li><a href="#">Guru & Staf</a></li>
-            <li><a href="#">PPDB</a></li>
-            <li><a href="#">Berita</a></li>
-            <li><a href="#">Galeri</a></li>
-            <li><a href="#">Kontak</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg-2">
-          <h6 class="footer-title">Akademik</h6>
-          <ul class="footer-links">
-            <li><a href="#">Program Tahfiz 30 Juz</a></li>
-            <li><a href="#">Program Bahasa</a></li>
-            <li><a href="#">Akademik</a></li>
-            <li><a href="#">Tarbiyah</a></li>
-            <li><a href="#">Ekstrakurikuler</a></li>
-            <li><a href="#">Prestasi</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4">
-          <h6 class="footer-title">Hubungi Kami</h6>
-          <ul class="footer-contact">
-            <li><i class="bi bi-geo-alt-fill"></i>Seladatar, RT./RW/RW.04/01, Giriawas, Kec. Cikajang, Kabupaten Garut, Jawa Barat 44171</li>
-            <li><i class="bi bi-telephone-fill"></i>+62 878-7497-4202</li>
-            <li><i class="bi bi-whatsapp"></i>+62 812-2466-4403</li>
-            <li><i class="bi bi-envelope-fill"></i>info@situwangi.sch.id</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
-        <span>&copy; 2026 Situwangi Islamic Boarding School. Hak cipta dilindungi.</span>
-        <span>Dibuat dengan <i class="bi bi-heart-fill text-danger"></i> oleh <a href="https://indokoding.net">Situwangi Islamic Boarding School</a></span>
-      </div>
-    </div>
-  </footer>
-
-  <div id="lightbox" class="lightbox"><button id="lightboxClose">&times;</button><img id="lightboxImg" src="" alt="" /></div>
-  <button id="backToTop" aria-label="Ke atas"><i class="bi bi-arrow-up"></i></button>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
